@@ -6,10 +6,10 @@ employeesalaryperhour=20;
 employeecheck=$(($RANDOM%3));
 if [ $fulltimewage -eq $employeecheck ]
    then
-      employeehour=8;
+      employeehour=10;
 elif [ $parttimewage -eq $employeecheck ]
     then
-       employeehour=8;
+       employeehour=5;
 else
       employeehour=0;
 fi

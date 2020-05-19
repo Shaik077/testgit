@@ -4,14 +4,16 @@ fulltimewage=1;
 parttimewage=2;
 employeesalaryperhour=20;
 employeecheck=$(($RANDOM%3));
-if [ $fulltimewage -eq $employeecheck ]
-   then
-      employeehour=8;
-elif [ $parttimewage -eq $employeecheck ]
-    then
-       employeehour=8;
-else
-      employeehour=0;
-fi
+case $employeecheck in
+ $fulltimewage)
+      employeehour=10
+             ;;
+ $parttimewage)
+       employeehour=5
+             ;;
+*)
+      employeehour=0
+     ;;
+esac
  salary=$(( $employeehour * $employeesalaryperhour))
 echo $salary

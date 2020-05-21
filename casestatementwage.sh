@@ -1,5 +1,3 @@
-#!/bin/bash -x
-
 fulltimewage=1;
 parttimewage=2;
 employeesalaryperhour=20;
@@ -9,11 +7,11 @@ case $employeecheck in
       employeehour=8
              ;;
  $parttimewage)
-    
        employeehour=5
-                 ;;
+                ;;
  *)
-      employeehour=0;
+      employeehour=0
+     ;;
 esac
  salary=$(( $employeehour * $employeesalaryperhour))
 echo $salary

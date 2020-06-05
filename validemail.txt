@@ -1,0 +1,28 @@
+abc@yahoo.com
+cat sampleemail.txt| grep -E "^[a-z]+[@][a-z]+[.][a-z]{1,3}$"
+
+abc-100@yahoo.com
+abc-100@abc.net 
+cat sampleemail.txt| grep -E "^[a-z]+[-][0-9]+[@][a-z]+[.][a-z]{1,3}$"
+
+abc111@abc.com
+cat sampleemail.txt| grep -E "^[a-z]+[0-9]+[@][a-z]+[.][a-z]{1,3}$"
+
+abc.100@yahoo.com
+cat sampleemail.txt| grep -E "^[a-z]+[.][0-9]+[@][a-z]+[.][a-z]{1,3}$"
+   
+abc.100@abc.com.au
+cat sampleemail.txt| grep -E "^[a-z]+[.][0-9]+[@][a-z]+[.][a-z]{1,3}[.][a-z]{1,3}$"
+
+abc@1.com
+cat sampleemail.txt| grep -E "^[a-z]+[@][0-9]+[.][a-z]{1,3}$"
+
+abc@gmail.com.com
+cat sampleemail.txt| grep -E "^[a-z][@][a-z]+[.][a-z]{1,3}[.][a-z]{1,3}$" 
+
+abc+100@gmail.com
+cat sampleemail.txt| grep -E "^[a-z]+[+][0-9]+[@][a-z]+[.][a-z]{1,3}$" 
+
+
+
+

@@ -1,0 +1,6 @@
+ find -mtime +7
+cat  access.log| awk '{print  $11}'|sort -n| uniq -ic|sort -n
+ cat  access.log| awk '{print  $11}'|sort -n| uniq -ic|sort -n
+ tail -4  access.log| awk '{print  $11}'|sort -n| uniq -u|sort -n
+ cat  access.log| awk '{print $9}'|sort -nr|uniq -ic
+cat  access.log| awk '{print  $16}'|sort -n| uniq -ic

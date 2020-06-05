@@ -1,0 +1,12 @@
+ echo $USERSECRET 
+export usersecret=dH34xJaa23
+
+
+
+find / -name    systemd*
+/usr/share/vim/vim82/ftplugin/systemd.vim
+/usr/share/vim/vim82/indent/systemd.vim
+/usr/share/vim/vim82/syntax/systemd.vim
+
+
+
